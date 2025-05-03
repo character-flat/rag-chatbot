@@ -3,3 +3,7 @@ __pycache__/
 *.pkl
 *.jsonl
 data/raw_pdfs/*
+data/chunks
+data/cleaned_pages
+scripts/.gradio
+
