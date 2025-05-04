@@ -1,3 +1,4 @@
+
 # 🧠 RAG Chatbot (FOSS-Only Edition)
 
 This is a lightweight, fully open-source Retrieval-Augmented Generation (RAG) chatbot that answers questions from long documents (e.g. PDFs, scraped websites, etc.). It uses:
@@ -34,6 +35,20 @@ Generated Answer
 
 ---
 
+## 📚 Data Source
+
+The input data used in this project comes from **insurance-related PDFs and scraped coverage summaries**. These documents contain:
+
+- Summaries of benefits and coverage
+- Tables for deductibles, co-pays, and network benefits
+- Legal and regulatory disclaimers
+
+These were cleaned and converted to plain text in `data/final_dataset.txt`.
+
+> 📌 Note: The quality of responses depends heavily on how relevant and clean this source data is. Garbage in, garbage out.
+
+---
+
 ## ✅ Advantages
 
 - **Fully Open-Source**: No APIs, no vendor lock-in.
@@ -58,7 +73,7 @@ Generated Answer
 
 .
 ├── data/
-│   ├── final\_dataset.txt        # Raw input text
+│   ├── final\_dataset.txt        # Raw input text (from insurance PDFs)
 │   └── chunks/                  # Preprocessed chunks
 ├── embed.py                     # Generates embeddings & builds FAISS index
 ├── query.py                     # Answers user questions
@@ -126,3 +141,5 @@ python app.py
 MIT. Built with 100% open-source tools and vibes.
 
 ```
+
+
